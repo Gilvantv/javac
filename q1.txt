@@ -1,0 +1,19 @@
+questao 1 java import java.util.Scanner;
+
+public class mult {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("primeiro numero  = ");
+        double N1 = scanner.nextDouble();
+        System.out.print("segundo numero =  ");
+        double N2 = scanner.nextDouble();
+        scanner.close();
+
+
+        double result = N1*N2;
+
+
+        System.out.println(N1+ "*" + N2 + " = " + result);
+    }

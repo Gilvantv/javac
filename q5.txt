@@ -1,0 +1,27 @@
+package Atividade5;
+
+import java.util.Scanner;
+
+public class Atividade5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Nome Funcionário: ");
+        String nomeFuncionario = sc.nextLine();
+
+        System.out.println("Horas Trabalhadas: ");
+        double horasTrabalhadas = sc.nextDouble();
+
+        System.out.println("Número de dependentes: ");
+        int numeroDependentes = sc.nextInt();
+
+        double salarioBruto = horasTrabalhadas * 3.0 + numeroDependentes * 100.0;
+
+        double salarioLiquido = salarioBruto - (salarioBruto * 0.135);
+
+        System.out.println("Funcionário: " + nomeFuncionario);
+        System.out.println("Salário Líquido: " + salarioLiquido);
+
+        sc.close();
+    }
+}

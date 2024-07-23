@@ -1,0 +1,28 @@
+package Atividade4;
+import java.util.Scanner;
+
+public class Atividade4 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Nota 1:");
+        double notaUm = sc.nextDouble();
+
+        System.out.println("Nota 2:");
+        double notaDois = sc.nextDouble();
+
+        System.out.println("Nota 3:");
+        double notaTres = sc.nextDouble();
+
+        double mediaNumUm = notaUm * 2;
+        double mediaNumDois = notaDois * 3;
+        double mediaNumTres = notaTres * 5;
+
+        double mediaFinal = mediaNumUm + mediaNumDois + mediaNumTres;
+
+        double somaPeso = mediaFinal / 10;
+
+        System.out.println("Nota Final: " + somaPeso);
+    }
+}
